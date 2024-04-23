@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HCrafts Handicrafts</title>
+  <link rel="Website Icon" type="png" href="images/logo.png">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+</head>
+
+<body>
+  <!--MENU BAR-->
+  <nav class="nav-bar">
+    <div id="row">
+      <a href="index.html">
+        <h1 id="logo">H<span id="span1">Crafts</span><span id="span2">.</span></h1>
+      </a>
+      <div id="menu-icon" onclick="myFunction(this)">
+        <p id="first"></p>
+        <p id="second"></p>
+        <p id="third"></p>
+      </div>
+    </div>
+    <div id="navbar">
+      <ul id="display">
+        <li><a href="index.html" onclick="bodyclose()">Home</a></li>
+        <li><a href="handicrafts.html" onclick="bodyclose()">HandiCrafts</a></li>
+        <li><a href="decorative.html" onclick="bodyclose()">Decorative</a></li>
+        <li><a href="contact.html" onclick="bodyclose()">Contact</a></li>
+      </ul>
+    </div>
+    <div id="search">
+      <div id="s-icon" onclick="searchbar()">
+        <i class="material-icons"
+          style="font-size:40px;color: rgb(255 179 0); text-shadow: 4px 2px 3px #000000;">search</i>
+      </div>
+      <form action="" id="search-form">
+        <input type="text" id="search-input" value="" placeholder="Search">
+        <button type="submit">
+          <i class="material-icons" style="font-size:29px;color:rgb(0, 0, 0);">search</i>
+        </button>
+      </form>
+    </div>
+  </nav>
+  <div id="cart"><a href="cart.html">
+      <svg id="cart-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+        class="bi bi-cart3" viewBox="0 0 16 16">
+        <path
+          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+      </svg>
+      <p id="no-of-items">0</p>
+    </a></div>
+  <main onclick="bodyclose()">
+
+    <!--
+    <section id="products">
+        <div class="product-image-container" id="product-image-container">
+          <img src="images/slider1.jpg" alt="Product Image">
+        </div>
+        
+        <div class="product-zoom-modal" id="product-zoom-modal">
+          <img src="images/slider1.jpg" alt="Product Image Large">
+          <span class="close-button" id="close-button">X</span>
+        </div>    
+      </section>
+    -->
+
+    <section id="handicraft" class="d-products">
+      <div id="pro-head">
+        <h1>Handicrafts Productss</h1>
+      </div>
+      <hr>
+      <div id="filter">
+        <button id="bp" onclick="filter()">filter</button>
+        <div class="filt">
+          <button class="button" id="sort-descending">Sort by Price (High to Low)</button>
+          <button class="button" id="sort-ascending">Sort by Price (Low to High)</button>
+          <button class="button" id="remove-filter">Remove Filtering</button>
+        </div>
+      </div>
+      <hr>
+      <div id="pproducts" class="pproducts">
+        <div id="hp-1" class="pproduct">
+          <div id="img-contain">
+            <img src="https://www.jaipurcraftonline.com/cdn/shop/products/71YpX94-wmL.jpg?v=1672224159" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">JaipurCrafts Handcrafted Home Decorative Lord Ganesha Statue (6.50 IN, Aluminium, Gold)
+          </p>
+          <p id="p-price">₹ <span id="">5000</span></p>
+        </div>
+        <div id="hp-2" class="pproduct">
+          <div id="img-contain">
+            <img src="https://www.jaipurcraftonline.com/cdn/shop/products/CPP05686.jpg?v=1672228931" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">JaipurCrafts Premium HandiCrafted Metal Flying/Running Horse Statue Wall Hanging For Home
+            And Office Decor ( 7.5 Inches)</p>
+          <p id="p-price">₹ <span id="">9000</span></p>
+        </div>
+        <div id="hp-3" class="pproduct">
+          <div id="img-contain">
+            <img src="https://i.etsystatic.com/24921594/r/il/d859fd/4620150775/il_794xN.4620150775_qu9o.jpg" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">Indian Handicraft Home Decor Item, Metal Elephant Statue with Meenakari Work, Animal
+            Sculpture, Rajasthani Hand Painted Gifts for Art Lovers</p>
+          <p id="p-price">₹ <span id="">10000</span></p>
+        </div>
+        <div id="hp-4" class="pproduct">
+          <div id="img-contain">
+            <img src="https://i.etsystatic.com/20817917/r/il/eaede1/3114718603/il_794xN.3114718603_9clg.jpg" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">Krishna Statue Hare Krishna Statue God of Lover Anniversary Gift Temple Home Pooja Decor
+            Gift for Him Handmade Copper Finish Krishna</p>
+          <p id="p-price">₹ <span id="">5000</span></p>
+        </div>
+        <div id="hp-5" class="pproduct">
+          <div id="img-contain">
+            <img src="https://i.etsystatic.com/19076644/r/il/9a18af/5844582009/il_794xN.5844582009_dqr5.jpg" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">Wooden Hummingbird Feeding on a Flower, Handmade Sculpture, Wood Carving Figure, Bird
+            Statue, Colibri, Handmade Deco, Birthday, Mother Day</p>
+          <p id="p-price">₹ <span id="">1500</span></p>
+        </div>
+        <div id="hp-6" class="pproduct">
+          <div id="img-contain">
+            <img src="https://i.etsystatic.com/21696401/r/il/fa909f/4823451825/il_794xN.4823451825_6837.jpg" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">Rajasthani Metal Decor Showpiece - Handmade Traditional Iron Doll Art for Living Room -
+            Indian Handicraft Miniature Decoration and Gift</p>
+          <p id="p-price">₹ <span id="">1000</span></p>
+        </div>
+        <div id="hp-7" class="pproduct">
+          <div id="img-contain">
+            <img src="https://i.etsystatic.com/21696401/r/il/64c594/4862404105/il_794xN.4862404105_tdsj.jpg" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">Auto Rickshaw Miniature Brass Decor Showpiece, Indian Handmade Auto Rickshaw, Tuk Tuk Art
+          </p>
+          <p id="p-price">₹ <span id="">8000</span></p>
+        </div>
+        <div id="hp-8" class="pproduct">
+          <div id="img-contain">
+            <img src="https://i.etsystatic.com/20248645/r/il/20cca8/5029274698/il_794xN.5029274698_13t7.jpg" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">Vintage Car Wooden Handicraft Home Decor Gift Big Antique Toy Car Model Living Room /
+            Office /Lounge Lobby Interior Decor Rosewood Sculpture</p>
+          <p id="p-price">₹ <span id="">1000</span></p>
+        </div>
+        <div id="hp-9" class="pproduct">
+          <div id="img-contain">
+            <img src="https://i.etsystatic.com/10406049/r/il/7d0c48/5761052385/il_794xN.5761052385_sqg1.jpg" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">Luxury Chess Set, Handmade Chess Board, Resin Chess Pieces, Gorgeous Walnut Brass Chess
+            Board, Premium Gift for Him, Father's Day Gifts</p>
+          <p id="p-price">₹ <span id="">3000</span></p>
+        </div>
+        <div id="hp-10" class="pproduct">
+          <div id="img-contain">
+            <img
+              src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTW-uCkF5nRO-DCqVxipOHabhHtKkA5tyDMSRGyJshJ4EtH-JosrDOfjMgP2xfSjOJJISVfQFeaLkOXhQJVARkjoMdnqyDLvvFsNcCp9WubkWdHn-B-L9IpZg&usqp=CAE"
+              alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">Indulge in the flavors of authentic biryani with our handmade terracotta biryani handi.
+            Made by skilled artisans using traditional techniques, this handi features a unique</p>
+          <p id="p-price">₹ <span id="">6000</span></p>
+        </div>
+        <div id="hp-11" class="pproduct">
+          <div id="img-contain">
+            <img src="https://i.etsystatic.com/28160908/r/il/dbe009/3975265905/il_794xN.3975265905_98jo.jpg" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">Rajasthani Famous Handmade Puppets, Katputli, Traditional Puppets Sets, Vintage Indian Toy
+            Dancing Puppets</p>
+          <p id="p-price">₹ <span id="">900</span></p>
+        </div>
+        <div id="hp-12" class="pproduct">
+          <div id="img-contain">
+            <img src="https://i.etsystatic.com/48611246/r/il/f2f6c8/5594763550/il_794xN.5594763550_3v39.jpg" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">Traditional thai horse carriage model, Thai Spirit bamboo handcraft, Horse carriage
+            miniature collectible</p>
+          <p id="p-price">₹ <span id="">11000</span></p>
+        </div>
+        <div id="hp-13" class="pproduct">
+          <div id="img-contain">
+            <img src="https://i.etsystatic.com/32538076/r/il/a7b36f/3509825397/il_794xN.3509825397_bdlq.jpg" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">Wood Buddha 7.8”inch ,Maditation Wooden Buddha figure,handcraft wood Buddha statue.</p>
+          <p id="p-price">₹ <span id="">6000</span></p>
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+  </main>
+  <footer class="foot">
+    <div class="flex-w">
+      <div class="w-size6">
+        <h4 class="s-text12">
+          GET IN TOUCH
+        </h4>
+        <div>
+          <p class="s-text7">
+            Any questions? Let us know in store at xxx,xxx state,xxx city or call us on (+91)xxxxxxxxxx
+          </p>
+          <div id="icons">
+            <a href="https://github.com/gaddevinay/" target="_blank"><i class="bx bxl-github"></i></a>
+            <a href="https://www.instagram.com/gadde_vinay" target="_blank"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/vinay-gadde/" target="_blank"><i
+                class="bx bxl-linkedin-square"></i></a>
+            <a href="https://www.facebook.com/gaddevinay2005" target="_blank"><i class="bx bxl-facebook-circle"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="w-size7">
+        <h4 class="s-text12">
+          Categories
+        </h4>
+        <ul>
+          <li class="p-b-9">
+            <a href="handicrafts.html" class="s-text7">
+              HandiCrafts
+            </a>
+          </li>
+          <li class="p-b-9">
+            <a href="decorative.html" class="s-text7">
+              Decoratives
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="w-size7">
+        <h4 class="s-text12">
+          Links
+        </h4>
+        <ul>
+          <li class="p-b-9">
+            <a href="#" class="s-text7">
+              Search
+            </a>
+          </li>
+          <li class="p-b-9">
+            <a href="cart.html" class="s-text7">
+              Cart
+            </a>
+          </li>
+          <li class="p-b-9">
+            <a href="contact.html" class="s-text7">
+              Contact Us
+            </a>
+          </li>
+          <li class="p-b-9">
+            <a href="#" class="s-text7">
+              Returns
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      Made by Vinay with <span style="font-size: 17px; color: red;">&#9829;</span>
+    </div>
+  </footer>
+  <script src="js/home.js"></script>
+</body>
+
+</html>

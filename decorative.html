@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HCrafts Decorative</title>
+  <link rel="Website Icon" type="png" href="images/logo.png">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+</head>
+
+<body>
+  <!--MENU BAR-->
+  <nav class="nav-bar">
+    <div id="row">
+      <a href="index.html">
+        <h1 id="logo">H<span id="span1">Crafts</span><span id="span2">.</span></h1>
+      </a>
+      <div id="menu-icon" onclick="myFunction(this)">
+        <p id="first"></p>
+        <p id="second"></p>
+        <p id="third"></p>
+      </div>
+    </div>
+    <div id="navbar">
+      <ul id="display">
+        <li><a href="index.html" onclick="bodyclose()">Home</a></li>
+        <li><a href="handicrafts.html" onclick="bodyclose()">HandiCrafts</a></li>
+        <li><a href="decorative.html" onclick="bodyclose()">Decorative</a></li>
+        <li><a href="contact.html" onclick="bodyclose()">Contact</a></li>
+      </ul>
+    </div>
+    <div id="search">
+      <div id="s-icon" onclick="searchbar()">
+        <i class="material-icons"
+          style="font-size:40px;color: rgb(255 179 0); text-shadow: 4px 2px 3px #000000;">search</i>
+      </div>
+      <form action="" id="search-form">
+        <input type="text" id="search-input" value="" placeholder="Search">
+        <button type="submit">
+          <i class="material-icons" style="font-size:29px;color:rgb(0, 0, 0);">search</i>
+        </button>
+      </form>
+    </div>
+
+
+  </nav>
+  <div id="cart"><a href="cart.html">
+      <svg id="cart-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+        class="bi bi-cart3" viewBox="0 0 16 16">
+        <path
+          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+      </svg>
+      <p id="no-of-items">0</p>
+    </a></div>
+  <main onclick="bodyclose()">
+    <!--
+    <section id="products">
+        <div class="pproduct-image-container" id="product-image-container">
+          <img src="images/slider1.jpg" alt="Product Image">
+        </div>
+        
+        
+        <div class="pproduct-zoom-modal" id="product-zoom-modal">
+          <img src="images/slider1.jpg" alt="Product Image Large">
+          <span class="close-button" id="close-button">X</span>
+        </div>    
+    </section>
+    -->
+
+
+
+    <section id="decoratives" class="d-products">
+      <div id="pro-head">
+        <h1>Decorative Products</h1>
+      </div>
+      <hr>
+      <div id="filter">
+        <button id="bp" onclick="filter()">filter</button>
+        <div class="filt">
+          <button class="button" id="sort-descending">Sort by Price (High to Low)</button>
+          <button class="button" id="sort-ascending">Sort by Price (Low to High)</button>
+          <button class="button" id="remove-filter">Remove Filtering</button>
+        </div>
+      </div>
+      <hr>
+      <div id="pproducts" class="pproducts">
+        <div id="dp-1" class="pproduct">
+          <div id="img-contain">
+            <img src="https://www.jaipurcraftonline.com/cdn/shop/products/51WJcK9pe7L.jpg?v=1672224117" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">JaipurCrafts Cute Loving Couple Sitting on a Heart couple showpiece figurine | decorative
+            handicraft sculptures |showpiece statue figurines items for living room | office drawing room | bed room
+            interior | home decor and house warming gifts | Valentines D</p>
+          <p id="p-price">₹ <span id="">2000</span></p>
+        </div>
+        <div id="dp-2" class="pproduct">
+          <div id="img-contain">
+            <img src="https://www.jaipurcraftonline.com/cdn/shop/files/91j0z8n85rL._SL1500.jpg?v=1698858261" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">JaipurCrafts Handmade Lotus Door Wall Hanging |Toran Bandhanwar| Wall Hanging Door Hanging
+            for Diwali/Toran for Door Set of 5 (20x4) Inch Multicolor</p>
+          <p id="p-price">₹ <span id="">7000</span></p>
+        </div>
+        <div id="dp-3" class="pproduct">
+          <div id="img-contain">
+            <img src="https://www.jaipurcraftonline.com/cdn/shop/products/71mkHnV1TAL.jpg?v=1672228841" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">Webelkart Premium Handmade Kaka Kaki Rajasthani Couple Tealight Candle Holder for Home |
+            Kaka kaki face Tealight Holder for Diwali Decoration</p>
+          <p id="p-price">₹ <span id="">1000</span></p>
+        </div>
+        <div id="dp-4" class="pproduct">
+          <div id="img-contain">
+            <img src="https://mohanjodero.com/wp-content/uploads/2020/10/background-2-49-scaled.jpg.webp" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">Mohan Jodero Elegant Iron/Metal Handicraft Wall Decor/Wall Hanging Metal Art Dancing Lady
+            Musician Handmade Interior Design Metal Wall Art Sculpture Wall Decor and Hanging</p>
+          <p id="p-price">₹ <span id="">8000</span></p>
+        </div>
+        <div id="dp-5" class="pproduct">
+          <div id="img-contain">
+            <img src="https://www.jaipurcraftonline.com/cdn/shop/files/81tvYrOn6LL._SL1500.jpg?v=1694931676" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">JaipurCrafts Handmade Multicolor Rajasthani Kisan Dolls Figurine Multicolour Recycled
+            Material Decorative Figurines for Home Office Decor Decorative (Rajasthani Puppets-2)</p>
+          <p id="p-price">₹ <span id="">5000</span></p>
+        </div>
+        <div id="dp-6" class="pproduct">
+          <div id="img-contain">
+            <img
+              src="https://media.craftmaestros.com/media/catalog/product/cache/a01441fde58691fd2d38c1b8ed6a019d/d/s/dsc02256.jpg"
+              alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">Handcrafted in clay and hand-painted by Indian awardee artisans</p>
+          <p id="p-price">₹ <span id="">2000</span></p>
+        </div>
+        <div id="dp-7" class="pproduct">
+          <div id="img-contain">
+            <img src="https://i.etsystatic.com/21696401/r/il/e6cca5/2524979686/il_794xN.2524979686_2m9k.jpg" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">HANGING FLOWER BASKET | Decorative Flowers Wall Basket | India Handmade Home Decorative
+            Wall Art Brass Basket | Indoor Outdoor Decor Basket</p>
+          <p id="p-price">₹ <span id="">1200</span></p>
+        </div>
+        <div id="dp-8" class="pproduct">
+          <div id="img-contain">
+            <img src="https://i.etsystatic.com/20633608/r/il/8cc4dc/5929178844/il_794xN.5929178844_jamn.jpg" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">Exquisite Handmade Crochet Bouquets, Sunflower and Rose Bouquet, Romantic gift for
+            girlfriend, Unique Birthday Anniversary Mother's Day Gift</p>
+          <p id="p-price">₹ <span id="">10000</span></p>
+        </div>
+        <div id="dp-9" class="pproduct">
+          <div id="img-contain">
+            <img src="https://i.etsystatic.com/37586747/r/il/0259e2/4818777923/il_794xN.4818777923_7tzn.jpg" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">Couple Gnome, Spring Day Gnomes, Holiday pink Gnome, elegant handmade gift, Scandinavian
+            home amulet, Shabby chic decor, Kitchen table decor</p>
+          <p id="p-price">₹ <span id="">20000</span></p>
+        </div>
+        <div id="dp-10" class="pproduct">
+          <div id="img-contain">
+            <img src="https://i.etsystatic.com/18081845/r/il/7ea0d5/5221560507/il_794xN.5221560507_qhpn.jpg" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">100% Handmade Oil Painting, Pink Poppy Flower Oil Painting, Handmade Flower Wall Art
+            Picture Living Room Bedroom Decor (No Frame)</p>
+          <p id="p-price">₹ <span id="">7000</span></p>
+        </div>
+        <div id="dp-11" class="pproduct">
+          <div id="img-contain">
+            <img src="https://i.etsystatic.com/36940411/r/il/7d8c68/5170990325/il_794xN.5170990325_9x1b.jpg" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">Hand Carving Wooden Cat,Wooden Sculpture,Christmas Gifts,Cat Ornaments,Gift For Her,Cat
+            Figurine,Desk Decor,Cat Lover Gift,Birthday Gift</p>
+          <p id="p-price">₹ <span id="">6000</span></p>
+        </div>
+        <div id="dp-12" class="pproduct">
+          <div id="img-contain">
+            <img
+              src="https://scontent.fvga2-1.fna.fbcdn.net/v/t1.18169-9/28056335_1624948347540588_8752427137163005209_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=qqyDFNr8TmgAb6u5C40&_nc_ht=scontent.fvga2-1.fna&oh=00_AfBMhnuUUtX4tFdFAnLHS-QktglDFtlEvY10AnvSFqOUVQ&oe=664EE8BE"
+              alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">My Party Suppliers Geometry Rattan Shape String Light/Christmas Decoration Light/Thailand
+            Handmade Paper String Light/Decoartion Light/Latest Christmas Lights</p>
+          <p id="p-price">₹ <span id="">8000</span></p>
+        </div>
+        <div id="dp-13" class="pproduct">
+          <div id="img-contain">
+            <img src="https://i.etsystatic.com/21696401/r/il/e53436/4768223792/il_794xN.4768223792_18k3.jpg" alt="">
+            <div id="a-t-c">
+              <button id="atcp" class="add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+          <p class="pro-decp">Handmade Rajasthani Wall Hanging - Traditional Handicraft for Unique Wall Decoration (Pack
+            of 10)</p>
+          <p id="p-price">₹ <span id="">4000</span></p>
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+  </main>
+  <footer class="foot">
+    <div class="flex-w">
+      <div class="w-size6">
+        <h4 class="s-text12">
+          GET IN TOUCH
+        </h4>
+        <div>
+          <p class="s-text7">
+            Any questions? Let us know in store at xxx,xxx state,xxx city or call us on (+91)xxxxxxxxxx
+          </p>
+          <div id="icons">
+            <a href="https://github.com/gaddevinay/" target="_blank"><i class="bx bxl-github"></i></a>
+            <a href="https://www.instagram.com/gadde_vinay" target="_blank"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/vinay-gadde/" target="_blank"><i
+                class="bx bxl-linkedin-square"></i></a>
+            <a href="https://www.facebook.com/gaddevinay2005" target="_blank"><i class="bx bxl-facebook-circle"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="w-size7">
+        <h4 class="s-text12">
+          Categories
+        </h4>
+        <ul>
+          <li class="p-b-9">
+            <a href="handicrafts.html" class="s-text7">
+              HandiCrafts
+            </a>
+          </li>
+          <li class="p-b-9">
+            <a href="decorative.html" class="s-text7">
+              Decoratives
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="w-size7">
+        <h4 class="s-text12">
+          Links
+        </h4>
+        <ul>
+          <li class="p-b-9">
+            <a href="#" class="s-text7">
+              Search
+            </a>
+          </li>
+          <li class="p-b-9">
+            <a href="cart.html" class="s-text7">
+              Cart
+            </a>
+          </li>
+          <li class="p-b-9">
+            <a href="contact.html" class="s-text7">
+              Contact Us
+            </a>
+          </li>
+          <li class="p-b-9">
+            <a href="#" class="s-text7">
+              Returns
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      Made by Vinay with <span style="font-size: 17px; color: red;">&#9829;</span>
+    </div>
+  </footer>
+  <script src="js/home.js"></script>
+</body>
+
+</html>
